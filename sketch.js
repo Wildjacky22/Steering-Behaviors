@@ -7,8 +7,8 @@ function setup() {
 }
 function draw() {
 
-  var r = random( 0 , 100 );
-  var g = random( 0 , 250 );
+  var r = random( 0 , 35 );
+  var g = random( 0 , 150 );
   var b = random( 0 , 255 );
   var a = random( 0 , 100 );
 
