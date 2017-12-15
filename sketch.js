@@ -1,5 +1,7 @@
 var font;
 
+var vehicles = [];
+
 function preload(){
   console.log("hey")
   
@@ -13,7 +15,6 @@ function setup(){
   
   //Setting up the canvas.
   createCanvas( windowWidth , windowHeight );
-  background(51);
   
   //Setting up the colors so tey chamge depending on the time.
   var hr = hour();
@@ -37,28 +38,7 @@ function setup(){
  }
  
   //Setting up the word.
-/*  textFont(font);
-  textSize(250)
-  fill( r , g , b );
-  noStroke();
-  textAlign( CENTER , CENTER )
-  text('Marth' , width*0.5 , height*0.5 );
-  
-  var points = font.textToPoints('Marth' , width*0.5 , height*0.5 );
-  
-  for(var i = 0; i < points.lenght; i++){
-    
-    var p1 = points[i];
-    stroke(0,255,0);
-    strokeWeight(10);
-    point(p1.x , p1.y )
-    
-  } */
-}
-
-function draw(){
-  
-  textFont(font);
+ textFont(font);
  // textSize(250)
   fill( r , g , b );
   //noStroke();
@@ -70,12 +50,27 @@ function draw(){
   for(var i = 0; i < points.lenght; i++){
     
     var p1 = points[i];
-    stroke(0,255,0);
-    strokeWeight(10);
-    point(p1.x , p1.y )
-    
+   // stroke(0,255,0);
+   //strokeWeight(10);
+   //point(p1.x , p1.y )
+    var vehicle = new Vehicle( p1.x , p1.y );
+    vehicles.push(vehicle);
   } 
   
   
   
+}
+
+function draw(){
+  
+ background(51);
+  
+ for(var i = 0; i < vahicles.lenght; i++ ){
+   
+  var v = vehicles[i];
+  v.update();
+  v.show(); 
+  
+   
+ }
 }
