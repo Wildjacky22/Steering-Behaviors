@@ -1,4 +1,4 @@
-var = font;
+var font;
 
 function preload(){
   
