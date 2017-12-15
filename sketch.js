@@ -1,4 +1,4 @@
-funtion preload(){
+function preload(){
   
   font = loadFont(’AvenirNextLTPro-Demi.otf’);
   
