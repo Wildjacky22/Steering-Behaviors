@@ -41,7 +41,7 @@ function setup(){
  textFont(font);
  // textSize(250)
  noFill();
-  Stroke(r , g ,b );
+  stroke(r , g ,b );
   //textAlign( CENTER , CENTER )
   //text('Marth' , width*0.5 , height*0.5 );
   
