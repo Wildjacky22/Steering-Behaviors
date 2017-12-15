@@ -1,7 +1,7 @@
 var font;
 
 function preload(){
-  console.log("hello")
+  console.log("hey")
   
   font = loadFont('AvenirNextLTPro-Demi.otf');
   
