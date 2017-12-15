@@ -40,8 +40,8 @@ function setup(){
   //Setting up the word.
  textFont(font);
  // textSize(250)
-  fill( r , g , b );
-  //noStroke();
+ noFill();
+  Stroke(r , g ,b );
   //textAlign( CENTER , CENTER )
   //text('Marth' , width*0.5 , height*0.5 );
   
