@@ -20,7 +20,7 @@ function setup(){
   var min = minute();
   var sec = second();
 
-  // Multiply the unit of time so that in one day it will add up to a cmpete 255 color.
+  // Multiply the unit of time so that in one day/minute/hour it will add up to a cmpete 255 color.
   var r = 15+hr*10.0;
   var g = 3+min*4.2;
   var b = 3+sec*4.2;
@@ -38,11 +38,21 @@ function setup(){
  
   //Setting up the word.
   textFont(font);
-  textSize(300)
+  textSize(250)
   fill( r , g , b );
   noStroke();
   textAlign( CENTER , CENTER )
   text('Marth' , width*0.5 , height*0.5 );
+  
+  var points = font.textToPoints('Marth' , width*0.5 , height*0.5 );
+  
+  for(var i = 0; i < points.lenght; i++){
+    
+    var p1 = points[i];
+    stroke(0,255,0);
+    strokeWeight(10);
+    point(p1.x , p1.y )
+    
   
 }
 
