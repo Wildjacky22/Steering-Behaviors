@@ -13,7 +13,7 @@ function setup(){
   
   //Setting up the canvas.
   createCanvas( windowWidth , windowHeight );
- // background(51);
+  background(51);
   
   //Setting up the colors so tey chamge depending on the time.
   var hr = hour();
@@ -37,7 +37,7 @@ function setup(){
  }
  
   //Setting up the word.
-  textFont(font);
+/*  textFont(font);
   textSize(250)
   fill( r , g , b );
   noStroke();
@@ -53,14 +53,28 @@ function setup(){
     strokeWeight(10);
     point(p1.x , p1.y )
     
-  } 
+  } */
 }
 
 function draw(){
-
-    background(51);
   
+  textFont(font);
+ // textSize(250)
+  fill( r , g , b );
+  //noStroke();
+  //textAlign( CENTER , CENTER )
+  //text('Marth' , width*0.5 , height*0.5 );
   
+  var points = font.textToPoints('Marth' , CENTER , CENTER , 250 );
+  
+  for(var i = 0; i < points.lenght; i++){
+    
+    var p1 = points[i];
+    stroke(0,255,0);
+    strokeWeight(10);
+    point(p1.x , p1.y )
+    
+  } 
   
   
   
