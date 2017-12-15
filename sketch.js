@@ -53,7 +53,7 @@ function setup(){
     strokeWeight(10);
     point(p1.x , p1.y )
     
-  
+  } 
 }
 
 function draw(){
