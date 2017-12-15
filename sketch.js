@@ -3,7 +3,7 @@ var font;
 function preload(){
   console.log("hello")
   
-  font = loadFont('assets/AvenirNextLTPro-Demi.otf');
+  font = loadFont('AvenirNextLTPro-Demi.otf');
   
 }
 
