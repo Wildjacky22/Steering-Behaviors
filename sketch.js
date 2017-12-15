@@ -65,7 +65,7 @@ function draw(){
   
  background(51);
   
- for(var i = 0; i < vahicles.lenght; i++ ){
+ for(var i = 0; i < vehicles.length; i++ ){
    
   var v = vehicles[i];
   v.update();
