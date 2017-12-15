@@ -39,7 +39,7 @@ function setup(){
   //Setting up the word.
   textFont(font);
   textSize(300)
-  fill(255);
+  fill( r , g , b );
   noStroke();
   textAlign( CENTER , CENTER )
   text('Marth' , width*0.5 , height*0.5 );
