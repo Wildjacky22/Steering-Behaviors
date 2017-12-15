@@ -1,6 +1,7 @@
 var font;
 
 function preload(){
+  console.log("hello")
   
   font = loadFont('assets/AvenirNextLTPro-Demi.otf');
   
