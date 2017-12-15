@@ -1,27 +1,30 @@
-function setup() {
-  createCanvas( windowWidth , windowHeight );
-
-  noStroke();
+funtion preload(){
   
-  background( 0 , 0 , 0 )
+  font = loadFont(’AvenirNextLTPro-Demi.otf’);
+  
 }
-function draw() {
 
-  var r = random( 0 , 35 );
-  var g = random( 0 , 150 );
-  var b = random( 0 , 255 );
-  var a = random( 0 , 100 );
 
-  fill( r , g , b , 2 ); 
-  ellipse( mouseX , mouseY , 20 , 20 );
+
+function setup(){
   
-  fill( r , g , b , a );
-  ellipse( mouseX , mouseY , 30 , 30 );
   
-  fill( r , g , b , a );
-  ellipse( mouseX , mouseY , 40 , 40);
-   
-  fill( r , g , b , a );
-  ellipse( mouseX , mouseY , 50 , 50);
-   
+  createCanvas( windowWIdth , windowHeight );
+  background(51);
+  textFont(font);
+  textSize(300)
+  fill(255);
+  noStroke();
+  text(’Marth’ , width*0.5 , height*0.5 );
+  
+}
+
+function draw(){
+
+  
+  
+  
+  
+  
+  
 }
