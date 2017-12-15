@@ -2,7 +2,7 @@ var font;
 
 function preload(){
   
-  font = loadFont(’AvenirNextLTPro-Demi.otf’);
+  font = loadFont('assets/AvenirNextLTPro-Demi.otf');
   
 }
 
@@ -18,7 +18,7 @@ function setup(){
   fill(255);
   noStroke();
   textAlign( center , center )
-  text(’Marth’ , width*0.5 , height*0.5 );
+  text('Marth' , width*0.5 , height*0.5 );
   
 }
 
