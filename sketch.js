@@ -18,7 +18,7 @@ function setup(){
   textSize(300)
   fill(255);
   noStroke();
-  textAlign( center , center )
+  textAlign( CENTER , CENTER )
   text('Marth' , width*0.5 , height*0.5 );
   
 }
