@@ -13,7 +13,7 @@ function setup(){
   
   //Setting up the canvas.
   createCanvas( windowWidth , windowHeight );
-  background(51);
+ // background(51);
   
   //Setting up the colors so tey chamge depending on the time.
   var hr = hour();
@@ -58,7 +58,7 @@ function setup(){
 
 function draw(){
 
-  
+    background(51);
   
   
   
